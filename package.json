@@ -5,6 +5,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "docz": "^2.3.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
@@ -14,6 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "docz": "docz dev",
     "build:commonjs": "cross-env BABEL_OUTPUT=commonjs babel src/components --out-dir lib/ --ignore **/__tests__,**/__mocks__",
     "build:esm": "babel src/components --out-dir esm/ --ignore **/__tests__,**/__mocks__",
     "copy-css:esm": "cpx \"src/components/**/*.css\" esm",

@@ -1,11 +1,16 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import './index.css';
+import React from 'react'
+import t from 'prop-types'
 
-const Button = ({ text }) => <button className="btn">这是一个组件按钮{text}</button>
+const Button = ({ children, type }) => <button type={type}>{children}</button>
 
 Button.propTypes = {
-  text: PropTypes.any
-};
-
-export default Button;
+  /**
+   * This is a description for this prop.
+   * Button type.
+   */
+  type: t.oneOf(['button', 'submit', 'reset']),
+}
+Button.defaultProps = {
+  type: 'button',
+}
+export default Button

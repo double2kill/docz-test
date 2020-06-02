@@ -1,3 +1,18 @@
-.btn {
-  height: 50px;
-}
+---
+name: Button
+route: /button
+---
+
+import { Playground, Props } from 'docz'
+import Button from './index'
+
+# Button
+
+<Props of={Button} />
+
+## Basic usage
+
+<Playground>
+  <Button type="submit">Click me</Button>
+  <Button>No, click me</Button>
+</Playground>
